@@ -37,4 +37,33 @@ func main() {
 	fmt.Println(floatSmall)
 	fmt.Println(floatBig)
 
+	var firstValue string = "Askar"
+	var secondValue string = "Adilet"
+	var finalValue string = firstValue + secondValue
+
+	var myFirstInitial rune = 'A'
+
+	fmt.Println(finalValue[0])
+	fmt.Println(myFirstInitial)
+
+	// Type Conversions are not automatic
+	var xt int = 10
+	var yt float64 = 30.2
+
+	var sum1 float64 = float64(xt) + yt
+	var sum2 int = xt + int(yt)
+
+	fmt.Println(sum1)
+	fmt.Println(sum2)
+
+	var xd int = 10
+	var yd byte = 100
+
+	var sum3 int = xd + int(yd)
+
+	fmt.Println(sum3)
+
+	xs := 10
+
+	fmt.Println(xs)
 }
