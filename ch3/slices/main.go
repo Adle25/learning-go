@@ -49,9 +49,26 @@ func main() {
 	// clear(anotherSlice)
 	// fmt.Println(anotherSlice)
 
-	slicingSlice := []string{"a", "b", "c", "d", "e"}
+	// slicingSlice := []string{"a", "b", "c", "d", "e"}
 
-	fmt.Println(slicingSlice[:2])
-	fmt.Println(slicingSlice[1:])
-	fmt.Println(slicingSlice[:])
+	// fmt.Println(slicingSlice[:2])
+	// fmt.Println(slicingSlice[1:])
+	// fmt.Println(slicingSlice[:])
+
+	// x := []int{1, 2, 3, 4}
+	// t := make([]int, 4)
+	// num := copy(t, x)
+	// fmt.Println(t, num)
+
+	// xArray := [4]int{1, 2, 3, 4}
+	// xSlice := xArray[:]
+	// fmt.Println(xSlice)
+
+	ySlice := []int{1, 2, 3, 4}
+	yArray := [4]int(ySlice)
+	smallArray := [2]int(ySlice)
+	ySlice[0] = 10
+	fmt.Println(ySlice)
+	fmt.Println(yArray)
+	fmt.Println(smallArray)
 }
